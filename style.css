@@ -36,6 +36,15 @@ h1{
     border-radius: 50%;
 }
 
+.post_text{
+    font-size: 0.90rem;
+    padding: 0.75rem 0 0.75rem 0;
+}
+
+.nome_data{
+    font-size: 0.90rem;
+}
+
 .img_post{
     max-width: 100%;
     width: 100%;

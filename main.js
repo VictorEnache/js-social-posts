@@ -79,7 +79,7 @@ posts_list.forEach((post,index) => {
         <img src="${post.foto_autore}" alt="" class="img_autore"> 
         <div class="nome_data"> 
             <div class="nome"> 
-                ${post.autore}
+                <strong>${post.autore}</strong>
             </div>
             <!-- /.nome -->
             <div class="data">
