@@ -134,7 +134,7 @@ posts_list.forEach((post,index) => {
             }
         }
 
-        console.log(post_piaciuti)
+        console.log('Array con "id" dei post piaciuti:', post_piaciuti)
     })
 
 })
