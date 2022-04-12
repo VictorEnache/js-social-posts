@@ -55,7 +55,7 @@ const posts_list = [
 /* Milestone 2
 Prendendo come riferimento il layout di esempio presente nell'html, stampiamo i post del nostro feed. */
 
-posts_list.forEach((post) => {
+posts_list.forEach((post,index) => {
     const all_content = document.querySelector('.all_content')
     const card = document.createElement('div')
     card.classList.add('card')
@@ -109,19 +109,38 @@ posts_list.forEach((post) => {
     <!-- /.interazioni -->`
     );
 
+
+    const like = document.querySelector(`#n_${post.id} .like`)
+    const contatore = document.querySelector(`#n_${post.id} .contatore_like strong`)
+
+    like.addEventListener('click', () => {
+        like.classList.toggle('active')
+
+        const classi_di_like = like.classList
+    
+        if(classi_di_like.contains('active')){
+            contatore.innerHTML = post.contatore_like + 1
+        }else{
+            contatore.innerHTML = post.contatore_like
+        }
+    })
+
+    
+    
+
+
 })
 
 
-const elenco_like = document.querySelectorAll('.like')
+/* const elenco_like = document.querySelectorAll('.like')
 
 for (const like of elenco_like){
     like.addEventListener('click', () => {
         like.classList.toggle('active')
-        const elenco_classi_like = like.classList
-    
     })
 
-}
+} */
+
 
     
 
