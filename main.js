@@ -55,6 +55,8 @@ const posts_list = [
 /* Milestone 2
 Prendendo come riferimento il layout di esempio presente nell'html, stampiamo i post del nostro feed. */
 
+const post_piaciuti = []
+
 posts_list.forEach((post,index) => {
     const all_content = document.querySelector('.all_content')
     const card = document.createElement('div')
@@ -120,26 +122,23 @@ posts_list.forEach((post,index) => {
     
         if(classi_di_like.contains('active')){
             contatore.innerHTML = post.contatore_like + 1
+            if(!post_piaciuti.includes(post.id)){
+                 post_piaciuti.push(post.id)
+            }
+           
         }else{
             contatore.innerHTML = post.contatore_like
+            if(post_piaciuti.includes(post.id)){
+                post_piaciuti.splice(post_piaciuti.indexOf(post.id), 1)
+            }
         }
+
+        console.log(post_piaciuti)
     })
-
-    
-    
-
 
 })
 
 
-/* const elenco_like = document.querySelectorAll('.like')
-
-for (const like of elenco_like){
-    like.addEventListener('click', () => {
-        like.classList.toggle('active')
-    })
-
-} */
 
 
     
