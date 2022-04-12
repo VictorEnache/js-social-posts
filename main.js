@@ -55,6 +55,7 @@ const posts_list = [
 /* Milestone 2
 Prendendo come riferimento il layout di esempio presente nell'html, stampiamo i post del nostro feed. */
 
+//elenco degli ID dei post piaciuti
 const post_piaciuti = []
 
 posts_list.forEach((post,index) => {
