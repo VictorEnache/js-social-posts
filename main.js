@@ -60,6 +60,14 @@ posts_list.forEach((post) => {
     const card = document.createElement('div')
     card.classList.add('card')
     all_content.append(card)
+    let img_post;
+    if(post.url_immagine !== ''){
+        img_post = `<img src="${post.url_immagine}" alt="" class="img_post">`
+    }
+    else{
+        img_post = ''
+    }
+
     card.insertAdjacentHTML("beforeend",
 
     `<div class="autore"> 
@@ -82,16 +90,17 @@ posts_list.forEach((post) => {
     </div>
     <!-- /.post_text -->
     <div class="img_post_contenitore">
-        <img src="${post.url_immagine}" alt="" class="img_post">
+     ${img_post}
     </div>
     <!-- /.img_post -->
     <div class="interazioni">
         <div class="like">
-
+        <i class="fa-solid fa-thumbs-up"></i>
+        <span>Mi Piace</span>
         </div>
         <!-- /.like -->
         <div class="contatore_like">
-            Piace a ${post.contatore_like} persone
+            Piace a <strong>${post.contatore_like}</strong> persone
         </div>
         <!-- /.contatore_like -->
     </div>
@@ -99,3 +108,10 @@ posts_list.forEach((post) => {
     );
 
 })
+
+
+    
+
+
+        
+  

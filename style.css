@@ -38,3 +38,8 @@ h1{
     aspect-ratio: 3/2;
     object-fit: cover;
 }
+
+.interazioni{
+    display: flex;
+    justify-content: space-around;
+}
