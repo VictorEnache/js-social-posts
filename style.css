@@ -43,3 +43,11 @@ h1{
     display: flex;
     justify-content: space-around;
 }
+
+.like{
+    cursor: pointer;
+}
+
+.active{
+    color: blue;
+}

@@ -68,6 +68,8 @@ posts_list.forEach((post) => {
         img_post = ''
     }
 
+    card.setAttribute("id", `n_${post.id}`);
+
     card.insertAdjacentHTML("beforeend",
 
     `<div class="autore"> 
@@ -109,6 +111,17 @@ posts_list.forEach((post) => {
 
 })
 
+
+const elenco_like = document.querySelectorAll('.like')
+
+for (const like of elenco_like){
+    like.addEventListener('click', () => {
+        like.classList.toggle('active')
+        const elenco_classi_like = like.classList
+    
+    })
+
+}
 
     
 
