@@ -16,7 +16,7 @@ const posts_list = [
         autore: 'Ginevra Giolitto',
         foto_autore: 'https://unsplash.it/300/300?image=',
         data_pubblicazione: '02/04/2022',
-        descrizione: 'un post che dice qualcosa',
+        descrizione: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur error tenetur, eveniet minima hic libero eum excepturi, consectetur, quaerat possimus porro? Nemo itaque dolores eum maxime quia aut tempora aspernatur.',
         url_immagine: 'https://unsplash.it/300/300?image=',
         contatore_like: 150
     },
@@ -26,7 +26,7 @@ const posts_list = [
         autore: 'Victor Enache',
         foto_autore: 'https://unsplash.it/300/300?image=',
         data_pubblicazione: '04/10/2022',
-        descrizione: "un'altro post che dice qualcosa",
+        descrizione: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur error tenetur, eveniet minima hic libero eum excepturi, consectetur, quaerat possimus porro? Nemo itaque dolores eum maxime quia aut tempora aspernatur.",
         url_immagine: 'https://unsplash.it/300/300?image=',
         contatore_like: 12
     },
@@ -36,7 +36,7 @@ const posts_list = [
         autore: 'Andrea Perazzini',
         foto_autore: 'https://unsplash.it/300/300?image=',
         data_pubblicazione: '04/10/2022',
-        descrizione: "un'altro post che dice qualcosa",
+        descrizione: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur error tenetur, eveniet minima hic libero eum excepturi, consectetur, quaerat possimus porro? Nemo itaque dolores eum maxime quia aut tempora aspernatur.",
         url_immagine: 'https://unsplash.it/300/300?image=',
         contatore_like: 35
     },
@@ -46,7 +46,7 @@ const posts_list = [
         autore: 'Samuele Mazzarini',
         foto_autore: 'https://unsplash.it/300/300?image=',
         data_pubblicazione: '04/05/2022',
-        descrizione: "un'altro post che dice qualcosa",
+        descrizione: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur error tenetur, eveniet minima hic libero eum excepturi, consectetur, quaerat possimus porro? Nemo itaque dolores eum maxime quia aut tempora aspernatur.",
         url_immagine: '',
         contatore_like: 9
     }
